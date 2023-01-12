@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Card from "./Component/Card/Card";
-import PoductSpec from "./Component/productSpec/ProductSpec";
 
 const products = [
   {
