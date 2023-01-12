@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Card from "./Component/Card/Card"
+import Navbar from './Component/Navbar/Navbar';
 
 const products = [
   {id:1 , title:"Midi sundress with shirring detail" , img:"image/1.jpg",size:["XL","L"] , price:29.5 , description:"This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you."},
@@ -14,9 +15,6 @@ const products = [
 function App() {
   return (
 <>
-    <div className='card-container'>
-    <Card {...products[0]} />
-    </div>
 </>
 
   );

@@ -1,0 +1,15 @@
+.nav-container{
+    border-bottom: 1px #C0C0C0 solid;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+label{
+    padding-right: 10px;
+}
+select{
+background-color: whitesmoke;
+border: 0.5px solid #000;
+}
