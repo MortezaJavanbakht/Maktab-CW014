@@ -1,0 +1,43 @@
+.productSpecModal {
+  z-index: 100;
+  width: 90%;
+  height: 90%;
+  position: fixed;
+  top: 0;
+}
+
+.product_image {
+  height: 100%;
+}
+
+.bordered {
+  border: 1px solid black;
+}
+
+.d-f-r {
+  display: flex;
+}
+
+.d-f-c {
+  display: flex;
+}
+
+.j-c-c {
+  justify-content: center;
+}
+
+.a-i-c {
+  align-items: center;
+}
+
+.g-8 {
+  gap: 8px;
+}
+
+.g-16 {
+  gap: 16px;
+}
+
+.g-24 {
+  gap: 24px;
+}
