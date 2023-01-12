@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -16,3 +18,4 @@ body,
   padding: 0;
   box-sizing: border-box;
 }
+>>>>>>> main
