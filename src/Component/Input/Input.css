@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.InpBox {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    gap: 0.3rem;
+    text-align:start;
+}
+.InpBox label{
+    font-size:1rem;
+    margin-left: 0.8rem;
+}
+.InpBox input{
+    width: 100%;
+    padding:0.5rem;
+    font-size:0.8rem;
+}
