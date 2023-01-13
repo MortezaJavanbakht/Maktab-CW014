@@ -1,8 +1,16 @@
 .modal {
   position: relative;
 }
+.show{
+  display: block;
+}
+.hide {
+  display:none;
+}
 
 .productSpecModal {
+  background-color: white;
+  display: flex;
   z-index: 100;
   width: 90%;
   height: 90%;
