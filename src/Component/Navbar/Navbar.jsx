@@ -29,8 +29,13 @@ export default function Navbar({list,SetList}) {
             <label>Filter</label>
             <select onChange={(e) => {
                 let array = [];
-                array = list.filter(items => items.size.includes(e.target.value))
-                SetList(array.slice(0,array.length))
+                if(e.target.value == 'All') {
+                    array = list.filter(items => items)
+                    SetList(array.slice(0,array.length))
+                }else {
+                    array = list.filter(items => items.size.includes(e.target.value))
+                    SetList(array.slice(0,array.length))
+                }
             }
             }>
                 <option value="All">All</option>
