@@ -1,11 +1,16 @@
-<<<<<<< HEAD
-=======
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+.mainContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 8px;
 }
 
+.left-side {
+  width: 70%;
+}
+
+.right-side {
+  width: 30%;
+}
 html,
 body,
 #root {
@@ -18,4 +23,3 @@ body,
   padding: 0;
   box-sizing: border-box;
 }
->>>>>>> main
