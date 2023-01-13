@@ -1,27 +1,50 @@
 import React from 'react'
 import "./Navbar.css"
 
-export default function Navbar() {
+export default function Navbar({list,SetList}) {
   return (
     <div className='nav-container'>
         <span>Products</span>
         <div>
             <label>Order</label>
-            <select value="">
-                <option value="Q">Highest</option>
-                <option value="z">Lowest</option>
+            <select onChange={(e)=> {
+                let array = [];
+                if(e.target.value == 'Low'){
+                    array = list.sort((a,b)=> a.price - b.price)
+                    console.log(array)
+                    SetList(array.slice(0,array.length))
+                }else  {
+                    array = list.sort((a,b)=> b.price - a.price)
+                    console.log(array)
+                    SetList(array.slice(0,array.length))
+                }
+            }
+            }>
+                <option value ="" hidden>Price</option>
+                <option value="High">Highest</option>
+                <option value="Low">Lowest</option>
             </select>
         </div>
         <div>
             <label>Filter</label>
-            <select value="">
-                <option value="A">All</option>
-                <option value="B">XS</option>
-                <option value="C">S</option>
-                <option value="D">M</option>
-                <option value="E">L</option>
-                <option value="F">XL</option>
-                <option value="G">XXL</option>
+            <select onChange={(e) => {
+                let array = [];
+                if(e.target.value == 'All') {
+                    array = list.filter(items => items)
+                    SetList(array.slice(0,array.length))
+                }else {
+                    array = list.filter(items => items.size.includes(e.target.value))
+                    SetList(array.slice(0,array.length))
+                }
+            }
+            }>
+                <option value="All">All</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
             </select>
         </div>
     </div>

@@ -7,7 +7,7 @@
 .mainContainer {
   display: flex;
   flex-wrap: nowrap;
-  padding: 8px;
+  padding: 2rem;
 }
 
 .left-side {
@@ -39,3 +39,12 @@ body,
   padding:0.8rem;
   border-bottom:1px solid gray;
 }
+.card-container {
+  /*height: 100rem;*/
+  overflow: scroll;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-top: 8px;
+}
+
